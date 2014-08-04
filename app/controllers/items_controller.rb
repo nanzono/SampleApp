@@ -7,7 +7,7 @@ class ItemsController < ApplicationController
 
     Flydata.send_to('user_activities2', {:timestamp => day, :action => 'item page index' })
 
-    Flydata.send_to('table_01', {:name => 'name', :memo => 'this is memo', :timestamp => day})
+    Flydata.send_to('table_01', {:name => 'name', :memo => 'this is memo', :timestamp => day, :column1 => 'aaabbbccc'})
 
   end
 
